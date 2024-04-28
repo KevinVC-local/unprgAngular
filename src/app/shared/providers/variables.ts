@@ -1,0 +1,1 @@
+export const N1000 = 1000;

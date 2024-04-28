@@ -1,0 +1,9 @@
+<section class="p-3 p-lg-5">
+    <div class="row">
+        <ng-container *ngFor="let item of listProducts">
+            <div class="col d-flex justify-content-center align-items-center mb-3">
+                <app-card-products [cardData]="item" (emitData)="handleEmit($event)"></app-card-products>
+            </div>
+        </ng-container>
+    </div>
+</section>

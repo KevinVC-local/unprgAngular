@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="cardData.img" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{cardData.name}}</h5>
+        <p class="card-text">{{cardData.description}}</p>
+        <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-primary">{{cardData.price}}</button>
+            <button type="button" class="btn btn-primary" (click)="handleEmit()">Agregar</button>
+        </div>
+    </div>
+</div>
